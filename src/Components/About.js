@@ -4,7 +4,7 @@ import History from "./inHistory";
 
 export default function About() {
   return (
-    <div className="about col-12 background container-fluid">
+    <div className="about col-12 container-fluid">
       <div className="row ">
         <div className="col-11 col-md-9 col-lg-8 ml-4 mt-4">
           <h1>About me</h1>

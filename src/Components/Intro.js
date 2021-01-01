@@ -7,7 +7,7 @@ export default function Intro() {
   useState(false);
 
   return (
-    <div className="container-fluid padding intro ">
+    <div className="container-fluid padding intro " id="intro">
       <div className="row no-gutters ">
         <div className="col-0 col-md-1"> </div>
         <div className="col-md-4 col-12 pl-5 mr-0 pr-0">
