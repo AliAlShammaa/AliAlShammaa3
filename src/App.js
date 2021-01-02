@@ -42,10 +42,7 @@ function App() {
   //   });
   // }, []);'
 
-  let move = function () {};
-
   useEffect(() => {
-    move();
     setTimeout(() => {
       let title = document.getElementById("siteTitle");
       const preload = document.getElementsByClassName("preload");
@@ -61,6 +58,7 @@ function App() {
       }
     }, 1000);
   }, []);
+
   tl.to("#siteTitle", { y: "50%", duration: 1, stagger: 0.25 });
 
   return (
@@ -71,7 +69,7 @@ function App() {
           <Router>
             <Header />
             <Switch>
-              <Route path="/" exact component={Home} />
+              <Route path="/Home" exact component={Home} />
               <Route path="/MessageAli" exact component={Message} />
             </Switch>
           </Router>
