@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/AliAlShammaa3/static/css/main.0fc10fff.chunk.css",
+    "main.js": "/AliAlShammaa3/static/js/main.b1f2ae2f.chunk.js",
+    "main.js.map": "/AliAlShammaa3/static/js/main.b1f2ae2f.chunk.js.map",
+    "runtime-main.js": "/AliAlShammaa3/static/js/runtime-main.64a84199.js",
+    "runtime-main.js.map": "/AliAlShammaa3/static/js/runtime-main.64a84199.js.map",
+    "static/js/2.5c155236.chunk.js": "/AliAlShammaa3/static/js/2.5c155236.chunk.js",
+    "static/js/2.5c155236.chunk.js.map": "/AliAlShammaa3/static/js/2.5c155236.chunk.js.map",
+    "static/js/3.bb4814e5.chunk.js": "/AliAlShammaa3/static/js/3.bb4814e5.chunk.js",
+    "static/js/3.bb4814e5.chunk.js.map": "/AliAlShammaa3/static/js/3.bb4814e5.chunk.js.map",
+    "index.html": "/AliAlShammaa3/index.html",
+    "static/css/main.0fc10fff.chunk.css.map": "/AliAlShammaa3/static/css/main.0fc10fff.chunk.css.map",
+    "static/js/2.5c155236.chunk.js.LICENSE.txt": "/AliAlShammaa3/static/js/2.5c155236.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/AliAlShammaa3/static/media/5.390cb84a.jpg",
+    "static/media/Ali AlShammaa-Resume.764fd355.pdf": "/AliAlShammaa3/static/media/Ali AlShammaa-Resume.764fd355.pdf",
+    "static/media/Chess.0b3e547b.png": "/AliAlShammaa3/static/media/Chess.0b3e547b.png",
+    "static/media/aa-icon-272.b897932d.jpg": "/AliAlShammaa3/static/media/aa-icon-272.b897932d.jpg",
+    "static/media/profilePic1.6aaaf881.jpg": "/AliAlShammaa3/static/media/profilePic1.6aaaf881.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64a84199.js",
+    "static/js/2.5c155236.chunk.js",
+    "static/css/main.0fc10fff.chunk.css",
+    "static/js/main.b1f2ae2f.chunk.js"
+  ]
+}
