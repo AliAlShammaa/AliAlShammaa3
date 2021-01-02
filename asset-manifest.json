@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AliAlShammaa3/static/css/main.0fc10fff.chunk.css",
-    "main.js": "/AliAlShammaa3/static/js/main.050500cc.chunk.js",
-    "main.js.map": "/AliAlShammaa3/static/js/main.050500cc.chunk.js.map",
+    "main.js": "/AliAlShammaa3/static/js/main.b0b57095.chunk.js",
+    "main.js.map": "/AliAlShammaa3/static/js/main.b0b57095.chunk.js.map",
     "runtime-main.js": "/AliAlShammaa3/static/js/runtime-main.64a84199.js",
     "runtime-main.js.map": "/AliAlShammaa3/static/js/runtime-main.64a84199.js.map",
     "static/js/2.5c155236.chunk.js": "/AliAlShammaa3/static/js/2.5c155236.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.64a84199.js",
     "static/js/2.5c155236.chunk.js",
     "static/css/main.0fc10fff.chunk.css",
-    "static/js/main.050500cc.chunk.js"
+    "static/js/main.b0b57095.chunk.js"
   ]
 }
