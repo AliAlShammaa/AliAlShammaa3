@@ -4,6 +4,9 @@ import Logo from "../Images/aa-icon-272.jpg";
 import "../styles/Header.css";
 
 function Header(props) {
+  window.onscroll = function () {
+    unStick();
+  };
   let up = false;
   let home = true;
 
@@ -35,14 +38,19 @@ function Header(props) {
     }
   };
 
-  // let unStick = function () {
-  // let navbar = document.getElementById("header");
-  // if (navbar.offsetTop > window.pageYOffset + 10000) {
-  //   navbar.classList.remove("sticky-top");
-  // }}
+  let unStick = function () {
+    let navbar = document.getElementById("header");
+    let rule = document.getElementById("rule1");
+    console.log("inside unstick");
+    if (rule.offsetTop <= window.pageYOffset) {
+      navbar.classList.remove("sticky-top");
+    } else {
+      navbar.classList.add("sticky-top");
+    }
+  };
 
   return (
-    <div className="sticky-top" id="header">
+    <div className="sticky-top m-0" id="header">
       <nav
         id="navbar"
         className="navbar navbar-expand-md navbar-light collapse bg-light"
@@ -97,11 +105,11 @@ function Header(props) {
       >
         <i id="toggle" className="fa fa-toggle-down"></i>
       </button>
-      <p>
-        {/* Keep to stay under the sticky-top*/}
+      {/* <p> */}
+      {/* Keep to stay under the sticky-top*/}
+      {/* <br />
         <br />
-        <br />
-      </p>
+      </p> */}
     </div>
   );
 }
