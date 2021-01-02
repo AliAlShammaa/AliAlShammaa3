@@ -69,7 +69,7 @@ function App() {
           <Header />
           <Home />
           <Router>
-            <Header />
+            {/* <Header /> */}
             <Switch>
               <Route path="/Home" exact component={Home} />
               <Route path="/MessageAli" exact component={Message} />
