@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/About.css";
-import History from "./inHistory";
 
 export default function About() {
   return (

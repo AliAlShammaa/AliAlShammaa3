@@ -29,5 +29,5 @@ i:hover,
 i:focus,
 i:active {
   text-decoration: none;
-  color: black;
+  color: rgb(61, 61, 61);
 }

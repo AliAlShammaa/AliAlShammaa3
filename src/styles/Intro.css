@@ -12,6 +12,8 @@ h2,
 h3,
 h4 {
   color: white;
+  font-family: "Redressed", cursive;
+  /* "Lobster Two", cursive; */
 }
 
 /* .background {
@@ -27,7 +29,7 @@ h4 {
 }
 
 .intro .exp p {
-  font-family: "Lato", sans-serif;
+  font-family: "Lobster Two", cursive;
   /* Verdana, Serif; */
   font-size: 1.5em;
 }

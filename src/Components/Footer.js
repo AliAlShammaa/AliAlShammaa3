@@ -2,7 +2,10 @@ import React from "react";
 
 function Footer(props) {
   return (
-    <footer className="mt-5 container-fixed padding mr-0 ml-0 bg-light">
+    <footer
+      id="Footer"
+      className="mt-5 container-fixed padding mr-0 ml-0 bg-light"
+    >
       <div>
         <div className="row text-dark text-center ">
           <br />

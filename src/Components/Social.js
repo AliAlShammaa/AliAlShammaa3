@@ -3,7 +3,7 @@ import "../styles/Social.css";
 
 function Social() {
   return (
-    <div className="social container-fluid padding">
+    <div id="Social" className="social container-fluid padding">
       <div className="row padding text-white text-center">
         <div className="col-12 mt-4">
           <h1 className="display-4">Connect</h1>

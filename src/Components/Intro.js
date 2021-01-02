@@ -61,7 +61,7 @@ export default function Intro() {
                 </p>
               </div>
 
-              <div className="col-md-6 col-12 exp">
+              <div id="situation" className="col-md-6 col-12 exp mt-">
                 <p>
                   {" "}
                   I am currently @<a className="btn-outline-warning">UW CS</a>
