@@ -66,6 +66,7 @@ function App() {
       {preloader}
       <div>
         <section className="section">
+          <Home />
           <Router>
             <Header />
             <Switch>
