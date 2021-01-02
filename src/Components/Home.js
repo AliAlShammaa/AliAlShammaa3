@@ -3,7 +3,7 @@ import Intro from "./Intro.js";
 import About from "./About.js";
 import Project from "./Projects.js";
 import History from "./inHistory";
-import mouse from "../Images/2.jpg";
+import Resume from "../files/Ali AlShammaa-Resume.pdf";
 import "../styles/Home.css";
 
 export default function Home() {
@@ -17,24 +17,49 @@ export default function Home() {
           <h1 id="siteTitle" className="hide">
             <span> Ali Al Shammaa</span>
           </h1>
-          <a class="home-down" href="#">
-            <i class="fa fa-chevron-down"></i>
-          </a>
+          <div id="homeDown" className="bounce">
+            <a href="#home">
+              <i class="fa fa-chevron-down"></i>
+            </a>
+          </div>
+          <div id="socialLinks">
+            <a
+              id="linkedin"
+              className="mr-2"
+              href="https://github.com/AliAlShammaa"
+              target="blank"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i>{" "}
+            </a>
+            <a
+              id="Github"
+              className="mr-2 ml-2"
+              href="https://www.linkedin.com/in/ali-al-shammaa-508a59bb/"
+              target="blank"
+            >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>{" "}
+            </a>
+            <a id="Resume" className="ml-2" href={Resume} target="blank">
+              <i class="fa fa-file-pdf-o" aria-hidden="true"></i>{" "}
+            </a>
+          </div>
         </div>
       </div>
-      <section id="home">
-        <Intro />
-        <br />
-        <hr id="rule1" className="home-hr" />
-        <About />
-        <hr className="home-hr" />
-        <History />
-        <hr className="home-hr" />
-        <Project />
-        {/* U+1F44B */}
-        <br />
-        <hr className="home-hr" />
-      </section>
+      <div id="home" className="pt-4">
+        <section className="mt-4 pt-2">
+          <Intro />
+          <br />
+          <hr id="rule1" className="home-hr" />
+          <About />
+          <hr className="home-hr" />
+          <History />
+          <hr className="home-hr" />
+          <Project />
+          {/* U+1F44B */}
+          <br />
+          <hr className="home-hr" />
+        </section>
+      </div>
     </div>
   );
 }

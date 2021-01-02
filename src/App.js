@@ -42,9 +42,7 @@ function App() {
   //   });
   // }, []);'
 
-  let move = function () {
-    tl.to("#siteTitle", { y: "50%", duration: 1, stagger: 0.25 });
-  };
+  let move = function () {};
 
   useEffect(() => {
     move();
@@ -63,6 +61,7 @@ function App() {
       }
     }, 1000);
   }, []);
+  tl.to("#siteTitle", { y: "50%", duration: 1, stagger: 0.25 });
 
   return (
     <div id="maindiv" className="container-fluid p-0">
