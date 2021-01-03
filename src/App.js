@@ -13,12 +13,17 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 function App() {
   let bool = false;
   let content = (
-    <div className="preload">
-      <div id="loading" className="flex justify-center">
-        <div className="loader"></div>
-        <span id="loadingText" className="mt-3">
-          Loading...
-        </span>
+    <div>
+      <h1 id="siteTitle1" className="hide1">
+        <span> Ali Al Shammaa</span>
+      </h1>
+      <div className="preload">
+        <div id="loading" className="flex justify-center">
+          <div className="loader"></div>
+          <span id="loadingText" className="mt-3">
+            Loading...
+          </span>
+        </div>
       </div>
     </div>
   );
@@ -42,31 +47,30 @@ function App() {
   //   });
   // }, []);'
 
-  useEffect(() => {
-    setTimeout(() => {
-      let title = document.getElementById("siteTitle");
-      const preload = document.getElementsByClassName("preload");
-      if (!bool) {
-        title.classList.remove("hide");
-        setPreloader(null);
-        // setPreloader(content2);
-        bool = true;
-      } else {
-        setPreloader(content);
-        title.classList.add("hide");
-        bool = false;
-      }
-    }, 1000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     let title = document.getElementById("siteTitle");
+  //     const preload = document.getElementsByClassName("preload");
+  //     if (!bool) {
+  //       title.classList.remove("hide");
+  //       setPreloader(null);
+  //       // setPreloader(content2);
+  //       bool = true;
+  //     } else {
+  //       setPreloader(content);
+  //       title.classList.add("hide");
+  //       bool = false;
+  //     }
+  //   }, 1000);
+  // }, []);
 
-  tl.to("#siteTitle", { y: "50%", duration: 1, stagger: 0.25 });
+  tl.to("#siteTitle1", { y: "1%", duration: 1, stagger: 0.25 });
 
   return (
     <div id="maindiv" className="container-fluid p-0">
       {preloader}
       <div>
         <section className="section">
-          {/* <Home /> */}
           <Router basename="/">
             <Header />
             <Switch>

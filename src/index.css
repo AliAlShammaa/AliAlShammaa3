@@ -59,25 +59,41 @@ code {
   transform: translateY(2%);
 } */
 
+.hide span {
+  transform: translateY(0%);
+  display: inline-block;
+  /* animation: moveUp 1s linear; */
+}
 #siteTitle {
   position: relative;
-  transform: translateX(9.1%) translateY(112%);
+  transform: translateX(9.1%) translateY(50%);
+  font-family: "Redressed", cursive;
+  opacity: 1;
+  font-size: 6rem;
+  z-index: 99;
+  color: white;
+}
+
+#siteTitle1 {
+  position: fixed;
+  transform: translateX(17.7%) translateY(80%);
   font-family: "Redressed", cursive;
   opacity: 1;
   font-size: 6rem;
   z-index: 1000;
   color: white;
-}
-
-.hide {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5 ease;
   background: black;
   overflow: hidden;
 }
 
-.hide span {
-  transform: translateY(100%);
+.hide1 span {
+  transform: translateY(80%);
   display: inline-block;
-  /* animation: moveUp 1s linear; */
 }
 
 #homeDown {
