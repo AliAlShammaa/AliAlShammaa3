@@ -451,6 +451,21 @@ a[data-tool-tip]:hover::after {
   }
 }
 
+@media (max-width: 700px) {
+  #siteTitle {
+    transform: translateX(9.1%) translateY(50%);
+
+    font-size: 4rem;
+  }
+
+  #siteTitle1 {
+    transform: translateX(19.7%) translateY(58%);
+
+    opacity: 1;
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .picOfMe {
     width: 20%;
@@ -465,6 +480,54 @@ a[data-tool-tip]:hover::after {
 
   .intro p {
     font-size: 2.4rem;
+  }
+
+  #bgPic::before {
+    /* content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+    opacity: 0.5;
+    z-index: 1; */
+
+    content: "";
+    opacity: 1;
+    position: absolute;
+    width: 400%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: skew(75deg) translateX(-124%);
+    /* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
+    /* background-image: linear-gradient(
+      120deg,
+      rgb(238, 89, 2, 1),
+      rgb(36, 114, 101)
+    ); */
+    background-image: linear-gradient(100deg, rgb(0, 0, 0), #000000);
+    z-index: 1;
+
+    @supports (mix-blend-mode: hue) {
+      opacity: 0.5;
+      mix-blend-mode: color;
+      mix-blend-mode: hard-light;
+      mix-blend-mode: hue;
+    }
+  }
+
+  #bgPic::after {
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: skew(-45deg) translateX(44%); /*164 */
+    /* background-image: linear-gradient(100deg, rgb(238, 89, 2, 1), #33d0ff); */
+    background-image: linear-gradient(100deg, rgb(0, 0, 0), #000000);
+
+    z-index: 2;
   }
 }
 @media (min-width: 769px) {
