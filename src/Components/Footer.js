@@ -4,7 +4,7 @@ function Footer(props) {
   return (
     <footer
       id="Footer"
-      className="mt-5 container-fixed padding mr-0 ml-0 bg-light"
+      className="mt-5 pt-4 container-fixed padding mr-0 ml-0 bg-light"
     >
       <div>
         <div className="row text-dark text-center ">

@@ -15,7 +15,7 @@ function App() {
   let content = (
     <div>
       <h1 id="siteTitle1" className="hide1">
-        <span> Ali Al Shammaa</span>
+        <span id="titleName"> Ali Al Shammaa</span>
       </h1>
       <div className="preload">
         <div id="loading" className="flex justify-center">
@@ -29,7 +29,7 @@ function App() {
   );
 
   let content2 = (
-    <div className="preload preload-finnish">
+    <div className="preload-finnish">
       <div id="loading" className="flex justify-center">
         <div className="loader"></div>
         <span id="loadingText" className="mt-3">
@@ -47,24 +47,20 @@ function App() {
   //   });
   // }, []);'
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     let title = document.getElementById("siteTitle");
-  //     const preload = document.getElementsByClassName("preload");
-  //     if (!bool) {
-  //       title.classList.remove("hide");
-  //       setPreloader(null);
-  //       // setPreloader(content2);
-  //       bool = true;
-  //     } else {
-  //       setPreloader(content);
-  //       title.classList.add("hide");
-  //       bool = false;
-  //     }
-  //   }, 1000);
-  // }, []);
+  useEffect(() => {
+    tl.to("#titleName", { y: "20%", duration: 1, stagger: 0.25 });
+    setTimeout(() => {
+      if (!bool) {
+        setPreloader(content2);
+        bool = true;
+      } else {
+        setPreloader(null);
+        bool = false;
+      }
+    }, 2500);
+  }, []);
 
-  tl.to("#siteTitle1", { y: "1%", duration: 1, stagger: 0.25 });
+  // tl.to("#titleName", { y: "20%", duration: 1, stagger: 0.25 });
 
   return (
     <div id="maindiv" className="container-fluid p-0">

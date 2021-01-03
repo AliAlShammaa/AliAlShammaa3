@@ -11,14 +11,14 @@ export default function Home() {
   // useEffect(() => {});
 
   return (
-    <div className="col-12  container-fluid pr-0 pl-0 ">
+    <div className="col-12 container-fluid pr-0 pl-0 ">
       <div id="bgPic">
         <div id="bgPic2">
           <h1 id="siteTitle" className="hide">
             <span> Ali Al Shammaa</span>
           </h1>
           <div id="homeDown" className="bounce">
-            <a href="#home">
+            <a href="./">
               <i class="fa fa-chevron-down"></i>
             </a>
           </div>
